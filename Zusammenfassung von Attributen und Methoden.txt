@@ -1,0 +1,98 @@
+Klassen in den 3 Skripten für die Musical-Programmierung
+
+Skript: musical
+
+- class Musical
+	
+	Attribute
+	- self.titel
+	- self.eintrittspreis
+	- self.saal
+	- self.vorstellungen
+
+	Methoden
+	- getVorstellung()
+	- neueVorstellung()
+	- __str__()
+
+
+- class Vorstellung
+
+ 	Attribute
+	- self.datum
+	- self.beginn
+	- self.saalbelegung
+	- self.saal
+
+	Methoden
+	- __str__()
+
+- class Saalbelegung
+	
+	Attribute
+	- self.belegung
+	- self.saal
+	
+	Methoden
+	- buche()
+	- getFreiePlaetze()
+	- __str__()
+
+- class Zuschauer
+	
+	Attribute
+	- self.name
+
+- class Platz
+
+	Attribute
+	- self.zuschauer
+
+	Methoden
+	- belegt()
+	- belege()
+	- __str__()
+
+- class Saal
+	
+	Attribute
+	- self.plaetzeProReihe
+
+
+
+Skript: musical_manager
+
+- class Manager
+
+	Attribute
+	- __menuetext
+	- self.__datei
+	- self.__lade_musical()
+	- self.__run()
+
+	Methoden
+	- __run()
+	- __neueVorstellung()
+	- __neuesMusical()
+	- __lade_musical()
+	- speichern()
+
+
+
+Skript: musical_tickets
+
+- class Kartenverkauf
+
+	Attribute
+	- __menuetext
+	- self.__datei
+	- self.__lade_musical
+	- self.__run()
+
+	Methoden
+	- __lade_musical()
+	- __run()
+	- __buchen()
+	- __getDruck()
+	- __speichern()
+	
